@@ -21,7 +21,7 @@ class Gallery(models.Model):
 class Contact(models.Model):
     location = models.CharField(max_length=100, null=True, blank=True)
     email = models.EmailField(max_length=100, null=True, blank=True)
-    phone = models.IntegerField(max_length=20, null=True, blank=True)
+    phone = models.IntegerField(null=True, blank=True)
     day = models.CharField(max_length=40, null=True, blank=True)
     opening_time = models.TimeField(null=True, blank=True)
     closing_time = models.TimeField(null=True, blank=True)
@@ -47,7 +47,7 @@ class About_us(models.Model):
         
 class Event(models.Model):
     title = models.CharField(max_length=100, null=True, blank=True)
-    price = models.IntegerField(max_length=10, null=True, blank=True)
+    price = models.IntegerField(null=True, blank=True)
     description = models.TextField(max_length=500, null=True, blank=True)
     picture = models.ImageField(upload_to='media/events', null=True, blank=True)
     

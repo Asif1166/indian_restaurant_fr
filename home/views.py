@@ -21,8 +21,7 @@ def about(request):
     }
     return render(request, 'pages/about.html', context)
 
-def menu(request):
-    return render(request, 'pages/menu.html',)
+
 
 def specials(request):
     return render(request, 'pages/specials.html',)
