@@ -1,0 +1,33 @@
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="about-img">
+            {% for abouts in about %}
+            <img src="{{ abouts.picture.url }}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+          
+          <h3>{{ abouts.title|default:"" }}</h3>
+          
+          
+          <p class="fst-italic">
+            {{ abouts.sub_title|default:"" }}
+          </p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i>{{ abouts.point1|default:"" }}</li>
+            <li><i class="bi bi-check-circle"></i>{{ abouts.point2|default:"" }}</li>
+            <li><i class="bi bi-check-circle"></i>{{ abouts.point3|default:"" }}</li>
+          </ul>
+          <p>
+            {{ abouts.description|default:"" }}
+          </p>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
