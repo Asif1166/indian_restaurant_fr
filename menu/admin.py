@@ -1,3 +1,21 @@
 from django.contrib import admin
-
+from .models import *
 # Register your models here.
+admin.site.register(Nos_Entrées)
+admin.site.register(Nos_Nans)
+admin.site.register(Nos_Paratha)
+admin.site.register(Nos_Biriyani)
+admin.site.register(Nos_Poulets)
+admin.site.register(Nos_Plats)
+admin.site.register(MENU)
+admin.site.register(Nos_légumes)
+admin.site.register(Nos_Crustacés)
+admin.site.register(Nos_Frites)
+admin.site.register(Nos_Viandes)
+admin.site.register(Nos_sauces)
+admin.site.register(Nos_desserts)
+admin.site.register(Nos_Boisson)
+admin.site.register(Nos_Cocktails)
+admin.site.register(Nos_Lassis)
+admin.site.register(Nos_Chaudes)
+admin.site.register(Café)

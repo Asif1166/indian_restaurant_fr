@@ -16,8 +16,11 @@ def home(request):
 
 def about(request):
     about = About_us.objects.all()
+    contacts= Contact.objects.all()
+    
     context = {
-        'about':about
+        'about':about,
+        'contacts':contacts,
     }
     return render(request, 'pages/about.html', context)
 
@@ -27,9 +30,11 @@ def specials(request):
     return render(request, 'pages/specials.html',)
 
 def gallery(request):
+    contacts= Contact.objects.all()
     gallery = Gallery.objects.all()
     context = {
         'gallery':gallery,
+        'contacts':contacts,
     }
     return render(request, 'pages/gallery.html', context)
 
@@ -65,14 +70,21 @@ def contact(request):
 
 def events(request):
     events = Event.objects.all()
+    contacts= Contact.objects.all()
+    
     context = {
-        'events':events
+        'events':events,
+        'contacts':contacts
     }
     return render(request, 'pages/events.html', context)
 
 def chefs(request):
+    
     chef = Chef.objects.all()
+    contacts= Contact.objects.all()
+    
     context = {
-        'chef':chef
+        'chef':chef,
+        'contacts':contacts,
     }
     return render(request, 'pages/chefs.html',context)

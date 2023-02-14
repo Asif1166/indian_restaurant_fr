@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background: #0c0b09;
+  background: #2d0844;
   color: #fff;
 }
 
@@ -27,6 +27,8 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
 }
+
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -173,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(12, 11, 9, 0.6);
+  background: rgba(38, 10, 94, 0.6);
   border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
@@ -183,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: #2d0844;
   border-bottom: 1px solid #37332a;
 }
 
@@ -274,7 +276,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #d9ba85;
+  color: #32cd32;
+  font-weight: 600;
 }
 
 .navbar .dropdown ul {
@@ -307,7 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #cda45e;
+  color: #32cd32;
 }
 
 .navbar .dropdown:hover > ul {
@@ -398,7 +401,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #cda45e;
+  color: #32cd32;
 }
 
 .navbar-mobile .getstarted {
@@ -440,18 +443,34 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.light-text {
+  /* background-color: #000000; */
+ 
+  
+  text-shadow: 5px 0 5px #02108f;
+}
+
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  /* background: url("../img/hero.jpg") top center; */
+  background: #718f4a top center;
   background-size: cover;
   position: relative;
   padding: 0;
 }
 
+.image-hero{
+    
+     border-radius: 50%;
+     width: 400px;
+     height: 400px;
+  
+}
+
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(29, 27, 27, 0.952); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -474,18 +493,19 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
 #hero h1 span {
-  color: #cda45e;
+  color: #007ACC;
 }
 
 #hero h2 {
-  color: #eee;
+  color: #d8e6f0;
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
+  text-shadow: 5px 0 5px #02108f;
 }
 
 #hero .btns {
@@ -503,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   line-height: 1;
   color: white;
-  border: 2px solid #cda45e;
+  border: 2px solid #02108f;
 }
 
 #hero .btn-menu:hover, #hero .btn-book:hover {
@@ -518,7 +538,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+  background: radial-gradient(#32cd32 50%, rgba(205, 164, 94, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -650,7 +670,7 @@ section {
 }
 
 .section-bg {
-  background-color: #1a1814;
+  background-color: #141E47;
 }
 
 .section-title {
@@ -684,7 +704,16 @@ section {
   font-size: 36px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
-  color: #cda45e;
+  color: #32cd32;
+}
+
+.section-title2 p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -743,7 +772,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: url("../img/about-bg.jpg") center center;
+  /* background: url("../img/hero4.jpg") center center; */
+  background: #141E47;
   background-size: cover;
   position: relative;
   padding: 80px 0;
@@ -751,7 +781,7 @@ section {
 
 .about:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.8); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -778,8 +808,8 @@ section {
   height: 60px;
   z-index: 1;
   content: '';
-  border-left: 5px solid #cda45e;
-  border-top: 5px solid #cda45e;
+  border-left: 5px solid #fdf14c;
+  border-top: 5px solid #fdf14c;
   transition: .5s;
 }
 
@@ -791,8 +821,8 @@ section {
   height: 60px;
   z-index: 2;
   content: '';
-  border-right: 5px solid #cda45e;
-  border-bottom: 5px solid #cda45e;
+  border-right: 5px solid #fdf14c;
+  border-bottom: 5px solid #fdf14c;
   transition: .5s;
 }
 
@@ -843,18 +873,28 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+.why-us{
+  background: url("../img/bg1.jpg");
+  
+  
+}
+
+
+
+
 .why-us .box {
+  
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
-  background: #1a1814;
+  background: #141E47;
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #cda45e;
+  color: #fdf14c;
 }
 
 .why-us .box h4 {
@@ -935,7 +975,9 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
+  content: "......................................................................"
+ "...................................................................."
+ "....................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -981,6 +1023,7 @@ section {
 --------------------------------------------------------------*/
 .specials {
   overflow: hidden;
+  background: #141E47;
 }
 
 .specials .nav-tabs {
@@ -1136,6 +1179,9 @@ section {
 /*--------------------------------------------------------------
 # Book A Table
 --------------------------------------------------------------*/
+.book-a-table{
+  background: #141E47;
+}
 .book-a-table .php-email-form {
   width: 100%;
 }
@@ -1197,7 +1243,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #0c0b09;
+  background: #1e2b5c;
   border-color: #625b4b;
   color: white;
 }
@@ -1215,7 +1261,7 @@ section {
 }
 
 .book-a-table .php-email-form input:focus, .book-a-table .php-email-form textarea:focus {
-  border-color: #cda45e;
+  border-color: #32cd32;
 }
 
 .book-a-table .php-email-form input {
@@ -1227,7 +1273,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type="submit"] {
-  background: #cda45e;
+  background: #32cd32;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1291,7 +1337,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #26231d;
+  background: #16265f;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1317,6 +1363,10 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+.gallery{
+  background: #141E47;
+}
+
 .gallery .gallery-item {
   overflow: hidden;
   border-right: 3px solid #454035;
@@ -1334,6 +1384,9 @@ section {
 /*--------------------------------------------------------------
 # Chefs
 --------------------------------------------------------------*/
+.chefs{
+  background: #141E47;
+}
 .chefs .member {
   text-align: center;
   margin-bottom: 20px;
@@ -1419,6 +1472,9 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact{
+  background: #141E47;
+}
 .contact .info {
   width: 100%;
 }
@@ -1428,7 +1484,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #cda45e;
+  background: #32cd32;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1512,7 +1568,7 @@ section {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  background: #0c0b09;
+  background: #15235c;
   border-color: #625b4b;
   color: white;
 }
@@ -1542,7 +1598,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #cda45e;
+  background: #32cd32;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1576,14 +1632,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: black;
+  background: #2d0844;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #0c0b09;
+  background: #2d0844;
   border-top: 1px solid #37332a;
   border-bottom: 1px solid #28251f;
   padding: 60px 0 30px 0;
@@ -1614,7 +1670,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #28251f;
+  background: #32cd32;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
